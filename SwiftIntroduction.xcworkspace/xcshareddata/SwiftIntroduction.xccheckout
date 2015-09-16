@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>09BDDE08-23EF-4DE1-84EF-CFA457627AEE</string>
+	<key>IDESourceControlProjectName</key>
+	<string>SwiftIntroduction</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>3889F9489A5A9919B98D9D8F095C3D02BECD785F</key>
+		<string>https://github.com/DmitryBulaienko/SwiftIntroduction.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>SwiftIntroduction.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>3889F9489A5A9919B98D9D8F095C3D02BECD785F</key>
+		<string>..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/DmitryBulaienko/SwiftIntroduction.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>3889F9489A5A9919B98D9D8F095C3D02BECD785F</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>3889F9489A5A9919B98D9D8F095C3D02BECD785F</string>
+			<key>IDESourceControlWCCName</key>
+			<string>SwiftIntroduction</string>
+		</dict>
+	</array>
+</dict>
+</plist>
