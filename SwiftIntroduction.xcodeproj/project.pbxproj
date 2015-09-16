@@ -7,21 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4442A22C1BA9CF5F0086550A /* SIFiguresViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4442A22B1BA9CF5F0086550A /* SIFiguresViewController.swift */; };
 		4482C5A21BA9804F0086CA87 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4482C5A11BA9804F0086CA87 /* AppDelegate.swift */; };
-		4482C5A41BA9804F0086CA87 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4482C5A31BA9804F0086CA87 /* ViewController.swift */; };
 		4482C5A71BA9804F0086CA87 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4482C5A51BA9804F0086CA87 /* Main.storyboard */; };
 		4482C5A91BA9804F0086CA87 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4482C5A81BA9804F0086CA87 /* Images.xcassets */; };
 		4482C5AC1BA9804F0086CA87 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4482C5AA1BA9804F0086CA87 /* LaunchScreen.xib */; };
+		4482C5C91BA986910086CA87 /* SIMainScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4482C5C81BA986910086CA87 /* SIMainScreenViewController.swift */; };
+		4482C5CB1BA990250086CA87 /* SIBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4482C5CA1BA990250086CA87 /* SIBaseViewController.swift */; };
+		4482C5CF1BA9B3800086CA87 /* SIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4482C5CE1BA9B3800086CA87 /* SIConstants.swift */; };
+		4482C5D11BA9B4640086CA87 /* SITableViewCellExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4482C5D01BA9B4640086CA87 /* SITableViewCellExtensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4442A22B1BA9CF5F0086550A /* SIFiguresViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SIFiguresViewController.swift; sourceTree = "<group>"; };
 		4482C59C1BA9804F0086CA87 /* SwiftIntroduction.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftIntroduction.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4482C5A01BA9804F0086CA87 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4482C5A11BA9804F0086CA87 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		4482C5A31BA9804F0086CA87 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		4482C5A61BA9804F0086CA87 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4482C5A81BA9804F0086CA87 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		4482C5AB1BA9804F0086CA87 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		4482C5C81BA986910086CA87 /* SIMainScreenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SIMainScreenViewController.swift; sourceTree = "<group>"; };
+		4482C5CA1BA990250086CA87 /* SIBaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SIBaseViewController.swift; sourceTree = "<group>"; };
+		4482C5CE1BA9B3800086CA87 /* SIConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SIConstants.swift; sourceTree = "<group>"; };
+		4482C5D01BA9B4640086CA87 /* SITableViewCellExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SITableViewCellExtensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,8 +62,13 @@
 		4482C59E1BA9804F0086CA87 /* SwiftIntroduction */ = {
 			isa = PBXGroup;
 			children = (
+				4482C5CD1BA9B34F0086CA87 /* Constants */,
+				4482C5C11BA986030086CA87 /* Examples */,
+				4482C5C21BA986030086CA87 /* Model */,
+				4482C5C31BA986030086CA87 /* View */,
+				4482C5C41BA986030086CA87 /* ViewController */,
+				4482C5CC1BA9B25E0086CA87 /* Extension */,
 				4482C5A11BA9804F0086CA87 /* AppDelegate.swift */,
-				4482C5A31BA9804F0086CA87 /* ViewController.swift */,
 				4482C5A51BA9804F0086CA87 /* Main.storyboard */,
 				4482C5A81BA9804F0086CA87 /* Images.xcassets */,
 				4482C5AA1BA9804F0086CA87 /* LaunchScreen.xib */,
@@ -70,6 +83,53 @@
 				4482C5A01BA9804F0086CA87 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4482C5C11BA986030086CA87 /* Examples */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Examples;
+			sourceTree = "<group>";
+		};
+		4482C5C21BA986030086CA87 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		4482C5C31BA986030086CA87 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		4482C5C41BA986030086CA87 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				4482C5CA1BA990250086CA87 /* SIBaseViewController.swift */,
+				4482C5C81BA986910086CA87 /* SIMainScreenViewController.swift */,
+				4442A22B1BA9CF5F0086550A /* SIFiguresViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		4482C5CC1BA9B25E0086CA87 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				4482C5D01BA9B4640086CA87 /* SITableViewCellExtensions.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		4482C5CD1BA9B34F0086CA87 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				4482C5CE1BA9B3800086CA87 /* SIConstants.swift */,
+			);
+			path = Constants;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -98,6 +158,7 @@
 		4482C5941BA9804F0086CA87 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = SI;
 				LastUpgradeCheck = 0630;
 				ORGANIZATIONNAME = "Applikey Solutions";
 				TargetAttributes = {
@@ -142,7 +203,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4482C5A41BA9804F0086CA87 /* ViewController.swift in Sources */,
+				4442A22C1BA9CF5F0086550A /* SIFiguresViewController.swift in Sources */,
+				4482C5D11BA9B4640086CA87 /* SITableViewCellExtensions.swift in Sources */,
+				4482C5CB1BA990250086CA87 /* SIBaseViewController.swift in Sources */,
+				4482C5CF1BA9B3800086CA87 /* SIConstants.swift in Sources */,
+				4482C5C91BA986910086CA87 /* SIMainScreenViewController.swift in Sources */,
 				4482C5A21BA9804F0086CA87 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -289,6 +354,7 @@
 				4482C5BD1BA9804F0086CA87 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
