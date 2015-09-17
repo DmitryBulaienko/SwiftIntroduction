@@ -19,8 +19,35 @@
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="L39-Nm-9JI">
                                 <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <view key="tableHeaderView" contentMode="scaleToFill" id="iph-4h-4sA" userLabel="header">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="0.0"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </view>
+                                <view key="tableFooterView" contentMode="scaleToFill" id="ffr-tZ-L5J" userLabel="footer">
+                                    <rect key="frame" x="0.0" y="66" width="320" height="55"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <subviews>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DYa-UD-Rgv" userLabel="Done">
+                                            <rect key="frame" x="30" y="5" width="260" height="45"/>
+                                            <state key="normal" title="Done">
+                                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                            </state>
+                                            <connections>
+                                                <action selector="doneButtonTapped:" destination="9ei-AV-8QQ" eventType="touchUpInside" id="IzK-w8-WGh"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <constraints>
+                                        <constraint firstItem="DYa-UD-Rgv" firstAttribute="leading" secondItem="ffr-tZ-L5J" secondAttribute="leading" constant="30" id="6ET-dO-DHs"/>
+                                        <constraint firstAttribute="bottom" secondItem="DYa-UD-Rgv" secondAttribute="bottom" constant="5" id="UsW-IJ-yOy"/>
+                                        <constraint firstAttribute="trailing" secondItem="DYa-UD-Rgv" secondAttribute="trailing" constant="30" id="boi-cs-yIf"/>
+                                        <constraint firstItem="DYa-UD-Rgv" firstAttribute="top" secondItem="ffr-tZ-L5J" secondAttribute="top" constant="5" id="oqr-W5-Bom"/>
+                                    </constraints>
+                                </view>
                                 <prototypes>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="UITableViewCell" id="0iC-gh-8K4">
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="UITableViewCell" id="0iC-gh-8K4">
                                         <rect key="frame" x="0.0" y="262" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="0iC-gh-8K4" id="6ab-fO-BI7">

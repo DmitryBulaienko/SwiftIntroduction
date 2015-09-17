@@ -26,9 +26,15 @@ class SIOptionChooserViewController: SIBaseViewController, UITableViewDataSource
             //self.options.indexOf(self.selectedOption!) //swift 2.0
             if (index != nil) {
                 let selectedIndexPath = NSIndexPath(forRow: index!, inSection: 0)
-                self.tableView.scrollToRowAtIndexPath(selectedIndexPath, atScrollPosition: UITableViewScrollPosition.Middle, animated: true)
+                self.tableView.selectRowAtIndexPath(selectedIndexPath, animated: true, scrollPosition: UITableViewScrollPosition.Middle)
+                self.updateCellSelectedState(selectedIndexPath, selected: true)
             }
         }
+    }
+    
+    deinit {
+        self.tableView.dataSource = nil
+        self.tableView.delegate = nil
     }
     
 // MARK: - tableViw configuration
@@ -55,11 +61,25 @@ class SIOptionChooserViewController: SIBaseViewController, UITableViewDataSource
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         self.selectedOption = self.options[indexPath.row]
-        if self.optionSelectedCallback != nil {
+        self.updateCellSelectedState(indexPath, selected: true)
+    }
+    
+    func tableView(tableView: UITableView, didDeselectRowAtIndexPath indexPath: NSIndexPath) {
+        self.updateCellSelectedState(indexPath, selected: false)
+    }
+    
+    private func updateCellSelectedState(cellIndexPath: NSIndexPath, selected :Bool) {
+        let cell = self.tableView.cellForRowAtIndexPath(cellIndexPath)
+        cell?.accessoryType = selected ? UITableViewCellAccessoryType.Checkmark : UITableViewCellAccessoryType.None
+    }
+    
+// MARK: - Actions
+    
+    @IBAction func doneButtonTapped(sender: AnyObject) {
+        if self.optionSelectedCallback != nil && self.selectedOption != nil {
             self.optionSelectedCallback!(self.selectedOption!)
         }
         
         self.navigationController?.popViewControllerAnimated(true)
     }
-    
 }

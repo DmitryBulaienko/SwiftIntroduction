@@ -50,6 +50,11 @@ class SIMainScreenViewController: SIBaseViewController, UITableViewDelegate, UIT
         // some kostul'
     }
     
+    deinit {
+        self.tableView.dataSource = nil
+        self.tableView.delegate = nil
+    }
+    
 // MARK: - configuration
     
     private func configureTableView() {
@@ -106,6 +111,9 @@ class SIMainScreenViewController: SIBaseViewController, UITableViewDelegate, UIT
         switch segue.identifier! {
         case SISegueMainToOptionsChooser:
             let optionsVC = segue.destinationViewController as! SIOptionChooserViewController
+            if self.selectedRowIndex != nil {
+                optionsVC.selectedOption = self.tableData[self.selectedRowIndex!].title
+            }
             
             optionsVC.optionSelectedCallback = {[weak self] (option: String) in
                 if let strongSelf = self {
