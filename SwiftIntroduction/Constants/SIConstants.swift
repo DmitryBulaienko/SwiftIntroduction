@@ -11,6 +11,7 @@ import Foundation
 // MARK: - Segues
 
 let SISegueMainToFiguresExample: String = "mainToFigures"
+let SISegueMainToOptionsChooser: String = "mainToOptionsChooser"
 
 // MARK: - FiguresScreen
 

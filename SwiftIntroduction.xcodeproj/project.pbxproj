@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		4442A22C1BA9CF5F0086550A /* SIFiguresViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4442A22B1BA9CF5F0086550A /* SIFiguresViewController.swift */; };
+		4442A22E1BAAC2340086550A /* SIOptionChooserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4442A22D1BAAC2340086550A /* SIOptionChooserViewController.swift */; };
 		4482C5A21BA9804F0086CA87 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4482C5A11BA9804F0086CA87 /* AppDelegate.swift */; };
 		4482C5A71BA9804F0086CA87 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4482C5A51BA9804F0086CA87 /* Main.storyboard */; };
 		4482C5A91BA9804F0086CA87 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4482C5A81BA9804F0086CA87 /* Images.xcassets */; };
@@ -20,6 +21,7 @@
 
 /* Begin PBXFileReference section */
 		4442A22B1BA9CF5F0086550A /* SIFiguresViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SIFiguresViewController.swift; sourceTree = "<group>"; };
+		4442A22D1BAAC2340086550A /* SIOptionChooserViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SIOptionChooserViewController.swift; sourceTree = "<group>"; };
 		4482C59C1BA9804F0086CA87 /* SwiftIntroduction.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftIntroduction.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4482C5A01BA9804F0086CA87 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4482C5A11BA9804F0086CA87 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -112,6 +114,7 @@
 				4482C5CA1BA990250086CA87 /* SIBaseViewController.swift */,
 				4482C5C81BA986910086CA87 /* SIMainScreenViewController.swift */,
 				4442A22B1BA9CF5F0086550A /* SIFiguresViewController.swift */,
+				4442A22D1BAAC2340086550A /* SIOptionChooserViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -205,6 +208,7 @@
 			files = (
 				4442A22C1BA9CF5F0086550A /* SIFiguresViewController.swift in Sources */,
 				4482C5D11BA9B4640086CA87 /* SITableViewCellExtensions.swift in Sources */,
+				4442A22E1BAAC2340086550A /* SIOptionChooserViewController.swift in Sources */,
 				4482C5CB1BA990250086CA87 /* SIBaseViewController.swift in Sources */,
 				4482C5CF1BA9B3800086CA87 /* SIConstants.swift in Sources */,
 				4482C5C91BA986910086CA87 /* SIMainScreenViewController.swift in Sources */,

@@ -17,8 +17,8 @@ class SIMainScreenViewController: SIBaseViewController, UITableViewDelegate, UIT
     
     let SINumbersOfRows: Int = 2
     let SITempConstValue: Int
-    let tableData: [(title: String, type: SIMenuCellType)]
-    //let tableData2: Array<(String, SIMenuCellType)>
+    var tableData: [(title: String, type: SIMenuCellType, segue: String?)]
+    //let tableData2: Array<(String, SIMenuCellType, String?)>
     
     var selectedRowIndex: Int?
     
@@ -26,12 +26,12 @@ class SIMainScreenViewController: SIBaseViewController, UITableViewDelegate, UIT
     
     required init(coder aDecoder: NSCoder) {
         SITempConstValue = 2
-        self.tableData = [(title: "Figures Example", type: SIMenuCellType.Default), //descriptive
-                          ("tests", SIMenuCellType.DropDown)] //shorthand
-        
         SIMainScreenViewController.overridebleTypeMethod()
+        self.tableData = [(title: "Figures Example", type: SIMenuCellType.Default, segue: SISegueMainToFiguresExample), //descriptive
+            ("Choose an option", SIMenuCellType.DropDown, SISegueMainToOptionsChooser)] //shorthand
 
         super.init(coder: aDecoder)
+        
     }
     
     override class func overridebleTypeMethod() -> Int {
@@ -52,9 +52,10 @@ class SIMainScreenViewController: SIBaseViewController, UITableViewDelegate, UIT
     
 // MARK: - configuration
     
-    func configureTableView() {
+    private func configureTableView() {
         self.tableView.dataSource = self
         self.tableView.delegate = self
+        self.tableView.tableFooterView = UIView()
     }
     
 // MARK: - TableView dataSource
@@ -93,7 +94,9 @@ class SIMainScreenViewController: SIBaseViewController, UITableViewDelegate, UIT
         tableView.deselectRowAtIndexPath(indexPath, animated: true)
 
         self.selectedRowIndex = indexPath.row
-        self.performSegueWithIdentifier(SISegueMainToFiguresExample, sender: nil)
+        let cellData = self.tableData[indexPath.row]
+        self.performSegueWithIdentifier(cellData.segue, sender: nil)
+        println("selected at index \(self.selectedRowIndex) ")
     }
     
 //MARK - Navigation
@@ -101,13 +104,26 @@ class SIMainScreenViewController: SIBaseViewController, UITableViewDelegate, UIT
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         
         switch segue.identifier! {
-        case SISegueMainToFiguresExample:
-            let vc = segue.destinationViewController as! SIFiguresViewController
-            if (self.selectedRowIndex != nil) {
-                
+        case SISegueMainToOptionsChooser:
+            let optionsVC = segue.destinationViewController as! SIOptionChooserViewController
+            
+            optionsVC.optionSelectedCallback = {[weak self] (option: String) in
+                if let strongSelf = self {
+                    if strongSelf.selectedRowIndex != nil {
+                        strongSelf.updateSelectedRowWithOption(option)
+                    }
+                }
             }
         default: break
         }
+    }
+    
+    private func updateSelectedRowWithOption(option :String) {
+        let index = self.selectedRowIndex!;
+        self.tableData[index].title = option
+        
+        let selectedIndexPath = NSIndexPath(forRow: self.selectedRowIndex!, inSection: 0)
+        self.tableView.reloadRowsAtIndexPaths([selectedIndexPath], withRowAnimation: UITableViewRowAnimation.Fade)
     }
     
 // MARK: - Other
