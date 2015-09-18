@@ -17,6 +17,7 @@
 		4482C5CB1BA990250086CA87 /* SIBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4482C5CA1BA990250086CA87 /* SIBaseViewController.swift */; };
 		4482C5CF1BA9B3800086CA87 /* SIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4482C5CE1BA9B3800086CA87 /* SIConstants.swift */; };
 		4482C5D11BA9B4640086CA87 /* SITableViewCellExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4482C5D01BA9B4640086CA87 /* SITableViewCellExtensions.swift */; };
+		44AB4B3A1BAC2B3300411351 /* SIOtherExamplesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44AB4B391BAC2B3300411351 /* SIOtherExamplesController.swift */; settings = {ASSET_TAGS = (); }; };
 		44B3C20C1BAC0E0C005B3266 /* SIPropertiesAndSubscriptsExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B3C20B1BAC0E0C005B3266 /* SIPropertiesAndSubscriptsExample.swift */; };
 		44B3C20E1BAC0F76005B3266 /* SIReferencesExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B3C20D1BAC0F76005B3266 /* SIReferencesExample.swift */; };
 		44B3C2101BAC0FA1005B3266 /* SIInitializersExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B3C20F1BAC0FA1005B3266 /* SIInitializersExample.swift */; };
@@ -36,6 +37,7 @@
 		4482C5CA1BA990250086CA87 /* SIBaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SIBaseViewController.swift; sourceTree = "<group>"; };
 		4482C5CE1BA9B3800086CA87 /* SIConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SIConstants.swift; sourceTree = "<group>"; };
 		4482C5D01BA9B4640086CA87 /* SITableViewCellExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SITableViewCellExtensions.swift; sourceTree = "<group>"; };
+		44AB4B391BAC2B3300411351 /* SIOtherExamplesController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SIOtherExamplesController.swift; sourceTree = "<group>"; };
 		44B3C20B1BAC0E0C005B3266 /* SIPropertiesAndSubscriptsExample.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SIPropertiesAndSubscriptsExample.swift; sourceTree = "<group>"; };
 		44B3C20D1BAC0F76005B3266 /* SIReferencesExample.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SIReferencesExample.swift; sourceTree = "<group>"; };
 		44B3C20F1BAC0FA1005B3266 /* SIInitializersExample.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SIInitializersExample.swift; sourceTree = "<group>"; };
@@ -127,6 +129,7 @@
 				4482C5C81BA986910086CA87 /* SIMainScreenViewController.swift */,
 				4442A22B1BA9CF5F0086550A /* SIFiguresViewController.swift */,
 				4442A22D1BAAC2340086550A /* SIOptionChooserViewController.swift */,
+				44AB4B391BAC2B3300411351 /* SIOtherExamplesController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -227,6 +230,7 @@
 				44B3C20C1BAC0E0C005B3266 /* SIPropertiesAndSubscriptsExample.swift in Sources */,
 				4482C5CB1BA990250086CA87 /* SIBaseViewController.swift in Sources */,
 				4482C5CF1BA9B3800086CA87 /* SIConstants.swift in Sources */,
+				44AB4B3A1BAC2B3300411351 /* SIOtherExamplesController.swift in Sources */,
 				4482C5C91BA986910086CA87 /* SIMainScreenViewController.swift in Sources */,
 				4482C5A21BA9804F0086CA87 /* AppDelegate.swift in Sources */,
 				44B3C20E1BAC0F76005B3266 /* SIReferencesExample.swift in Sources */,

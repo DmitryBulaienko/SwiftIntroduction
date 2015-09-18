@@ -70,7 +70,9 @@ class SIOptionChooserViewController: SIBaseViewController, UITableViewDataSource
     
     private func updateCellSelectedState(cellIndexPath: NSIndexPath, selected :Bool) {
         let cell = self.tableView.cellForRowAtIndexPath(cellIndexPath)
-        cell?.accessoryType = selected ? UITableViewCellAccessoryType.Checkmark : UITableViewCellAccessoryType.None
+        cell?.accessoryType = selected ? .Checkmark : .None
+        
+        //also could be UITableViewCellAccessoryType.Checkmark : UITableViewCellAccessoryType.None
     }
     
 // MARK: - Actions

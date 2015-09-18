@@ -14,7 +14,7 @@ class SICyclesExample: NSObject {
     // MARK: - Overloading
    
     func print() {
-        
+        //print smth
     }
     
     func print(arg: Int) {
@@ -29,5 +29,19 @@ class SICyclesExample: NSObject {
     
     // MARK: - Cycles
     
-    
+    func iterateExample() {
+        let count = self.values.count //6
+        for i in 0..<count {
+            self.print(i)
+        }
+        
+        //outputs indexes:0 1 2 3 4 5
+        
+        
+        for i in 0...count {
+            self.print(i)
+        }
+        
+        //outputs indexes:0 1 2 3 4 5 6
+    }
 }

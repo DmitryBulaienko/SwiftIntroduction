@@ -10,7 +10,18 @@ import UIKit
 
 enum SIMenuCellType {
     case Default, DropDown
+    
+    func stringValue() -> String {
+        switch (self) {
+        case .Default:
+            return "default"
+        case .DropDown:
+            return "drop down"
+        }
+    }
 }
+
+typealias SIMenuTypeAlias = (title: String, type: SIMenuCellType, segue: String?)
 
 
 class SIMainScreenViewController: SIBaseViewController, UITableViewDelegate, UITableViewDataSource {
@@ -18,6 +29,9 @@ class SIMainScreenViewController: SIBaseViewController, UITableViewDelegate, UIT
     let SINumbersOfRows: Int = 2
     let SITempConstValue: Int
     var tableData: [(title: String, type: SIMenuCellType, segue: String?)]
+    //or 
+    //var tableData: [SIMenuTypeAlias]
+    //or
     //let tableData2: Array<(String, SIMenuCellType, String?)>
     
     var selectedRowIndex: Int?
@@ -28,7 +42,8 @@ class SIMainScreenViewController: SIBaseViewController, UITableViewDelegate, UIT
         SITempConstValue = 2
         SIMainScreenViewController.overridebleTypeMethod()
         self.tableData = [(title: "Figures Example", type: SIMenuCellType.Default, segue: SISegueMainToFiguresExample), //descriptive
-            ("Choose an option", SIMenuCellType.DropDown, SISegueMainToOptionsChooser)] //shorthand
+                          ("Choose an option", SIMenuCellType.DropDown, SISegueMainToOptionsChooser),
+                          ("Other examples", .Default, SISegueMainToExamples)] //shorthand
 
         super.init(coder: aDecoder)
         

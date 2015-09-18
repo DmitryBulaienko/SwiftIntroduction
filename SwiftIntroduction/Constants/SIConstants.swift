@@ -12,6 +12,7 @@ import Foundation
 
 let SISegueMainToFiguresExample: String = "mainToFigures"
 let SISegueMainToOptionsChooser: String = "mainToOptionsChooser"
+let SISegueMainToExamples: String = "mainToExamples"
 
 // MARK: - FiguresScreen
 
