@@ -7,6 +7,6 @@ inhibit_all_warnings!
 
 target 'SwiftIntroduction' do
     
-#pod 'PINRemoteImage', '~> 1.1.2'
+pod 'PINRemoteImage', '~> 1.1.2'
 
 end

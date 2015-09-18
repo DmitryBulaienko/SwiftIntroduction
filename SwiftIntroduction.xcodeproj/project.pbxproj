@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4442A22C1BA9CF5F0086550A /* SIFiguresViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4442A22B1BA9CF5F0086550A /* SIFiguresViewController.swift */; };
+		4442A22C1BA9CF5F0086550A /* SIInteractionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4442A22B1BA9CF5F0086550A /* SIInteractionViewController.swift */; };
 		4442A22E1BAAC2340086550A /* SIOptionChooserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4442A22D1BAAC2340086550A /* SIOptionChooserViewController.swift */; };
 		4482C5A21BA9804F0086CA87 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4482C5A11BA9804F0086CA87 /* AppDelegate.swift */; };
 		4482C5A71BA9804F0086CA87 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4482C5A51BA9804F0086CA87 /* Main.storyboard */; };
@@ -22,10 +22,12 @@
 		44B3C20E1BAC0F76005B3266 /* SIReferencesExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B3C20D1BAC0F76005B3266 /* SIReferencesExample.swift */; };
 		44B3C2101BAC0FA1005B3266 /* SIInitializersExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B3C20F1BAC0FA1005B3266 /* SIInitializersExample.swift */; };
 		44B3C2121BAC0FAD005B3266 /* SICyclesExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B3C2111BAC0FAD005B3266 /* SICyclesExample.swift */; };
+		6117AC88545ED836F039E462 /* libPods-SwiftIntroduction.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 61C918EFA78580A77C508C20 /* libPods-SwiftIntroduction.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		4442A22B1BA9CF5F0086550A /* SIFiguresViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SIFiguresViewController.swift; sourceTree = "<group>"; };
+		4417ECB91BAC5D25000E9D43 /* SwiftIntroduction-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SwiftIntroduction-Bridging-Header.h"; sourceTree = "<group>"; };
+		4442A22B1BA9CF5F0086550A /* SIInteractionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SIInteractionViewController.swift; sourceTree = "<group>"; };
 		4442A22D1BAAC2340086550A /* SIOptionChooserViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SIOptionChooserViewController.swift; sourceTree = "<group>"; };
 		4482C59C1BA9804F0086CA87 /* SwiftIntroduction.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftIntroduction.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4482C5A01BA9804F0086CA87 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -42,6 +44,9 @@
 		44B3C20D1BAC0F76005B3266 /* SIReferencesExample.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SIReferencesExample.swift; sourceTree = "<group>"; };
 		44B3C20F1BAC0FA1005B3266 /* SIInitializersExample.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SIInitializersExample.swift; sourceTree = "<group>"; };
 		44B3C2111BAC0FAD005B3266 /* SICyclesExample.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SICyclesExample.swift; sourceTree = "<group>"; };
+		5F6C8FF083812F7C9B1DDFE9 /* Pods-SwiftIntroduction.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftIntroduction.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftIntroduction/Pods-SwiftIntroduction.debug.xcconfig"; sourceTree = "<group>"; };
+		61C918EFA78580A77C508C20 /* libPods-SwiftIntroduction.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SwiftIntroduction.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B7966573B83FF8FB17CB828D /* Pods-SwiftIntroduction.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftIntroduction.release.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftIntroduction/Pods-SwiftIntroduction.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,17 +54,45 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6117AC88545ED836F039E462 /* libPods-SwiftIntroduction.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1903C879758058C53EE2E933 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				61C918EFA78580A77C508C20 /* libPods-SwiftIntroduction.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2CB5D712DFC6142361D4F577 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5F6C8FF083812F7C9B1DDFE9 /* Pods-SwiftIntroduction.debug.xcconfig */,
+				B7966573B83FF8FB17CB828D /* Pods-SwiftIntroduction.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		4417ECAF1BAC5A62000E9D43 /* BridgingHeaders */ = {
+			isa = PBXGroup;
+			children = (
+				4417ECB91BAC5D25000E9D43 /* SwiftIntroduction-Bridging-Header.h */,
+			);
+			path = BridgingHeaders;
+			sourceTree = "<group>";
+		};
 		4482C5931BA9804E0086CA87 = {
 			isa = PBXGroup;
 			children = (
 				4482C59E1BA9804F0086CA87 /* SwiftIntroduction */,
 				4482C59D1BA9804F0086CA87 /* Products */,
+				2CB5D712DFC6142361D4F577 /* Pods */,
+				1903C879758058C53EE2E933 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -84,6 +117,7 @@
 				4482C5A51BA9804F0086CA87 /* Main.storyboard */,
 				4482C5A81BA9804F0086CA87 /* Images.xcassets */,
 				4482C5AA1BA9804F0086CA87 /* LaunchScreen.xib */,
+				4417ECAF1BAC5A62000E9D43 /* BridgingHeaders */,
 				4482C59F1BA9804F0086CA87 /* Supporting Files */,
 			);
 			path = SwiftIntroduction;
@@ -127,7 +161,7 @@
 			children = (
 				4482C5CA1BA990250086CA87 /* SIBaseViewController.swift */,
 				4482C5C81BA986910086CA87 /* SIMainScreenViewController.swift */,
-				4442A22B1BA9CF5F0086550A /* SIFiguresViewController.swift */,
+				4442A22B1BA9CF5F0086550A /* SIInteractionViewController.swift */,
 				4442A22D1BAAC2340086550A /* SIOptionChooserViewController.swift */,
 				44AB4B391BAC2B3300411351 /* SIOtherExamplesController.swift */,
 			);
@@ -157,9 +191,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4482C5BB1BA9804F0086CA87 /* Build configuration list for PBXNativeTarget "SwiftIntroduction" */;
 			buildPhases = (
+				535DBFD78765E0C6A353B581 /* Check Pods Manifest.lock */,
 				4482C5981BA9804F0086CA87 /* Sources */,
 				4482C5991BA9804F0086CA87 /* Frameworks */,
 				4482C59A1BA9804F0086CA87 /* Resources */,
+				5DA9D3FA6201383E8FFCCB57 /* Copy Pods Resources */,
+				2EBC7B192A5BAC309A6F319C /* Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -218,12 +255,60 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2EBC7B192A5BAC309A6F319C /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SwiftIntroduction/Pods-SwiftIntroduction-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		535DBFD78765E0C6A353B581 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		5DA9D3FA6201383E8FFCCB57 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SwiftIntroduction/Pods-SwiftIntroduction-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		4482C5981BA9804F0086CA87 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4442A22C1BA9CF5F0086550A /* SIFiguresViewController.swift in Sources */,
+				4442A22C1BA9CF5F0086550A /* SIInteractionViewController.swift in Sources */,
 				44B3C2101BAC0FA1005B3266 /* SIInitializersExample.swift in Sources */,
 				4482C5D11BA9B4640086CA87 /* SITableViewCellExtensions.swift in Sources */,
 				4442A22E1BAAC2340086550A /* SIOptionChooserViewController.swift in Sources */,
@@ -301,6 +386,7 @@
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = "SwiftIntroduction/BridgingHeaders/SwiftIntroduction-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
@@ -338,29 +424,37 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = "SwiftIntroduction/BridgingHeaders/SwiftIntroduction-Bridging-Header.h";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
 		4482C5BC1BA9804F0086CA87 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5F6C8FF083812F7C9B1DDFE9 /* Pods-SwiftIntroduction.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = SwiftIntroduction/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.applikeysolutions.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SwiftIntroduction/BridgingHeaders/SwiftIntroduction-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		4482C5BD1BA9804F0086CA87 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B7966573B83FF8FB17CB828D /* Pods-SwiftIntroduction.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = SwiftIntroduction/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.applikeysolutions.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SwiftIntroduction/BridgingHeaders/SwiftIntroduction-Bridging-Header.h";
 			};
 			name = Release;
 		};

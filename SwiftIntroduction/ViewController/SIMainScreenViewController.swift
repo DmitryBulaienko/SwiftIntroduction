@@ -41,7 +41,7 @@ class SIMainScreenViewController: SIBaseViewController, UITableViewDelegate, UIT
     required init?(coder aDecoder: NSCoder) {
         SITempConstValue = 2
         SIMainScreenViewController.overridebleTypeMethod()
-        self.tableData = [(title: "Figures Example", type: SIMenuCellType.Default, segue: SISegueMainToFiguresExample), //descriptive
+        self.tableData = [(title: "Load image test", type: SIMenuCellType.Default, segue: SISegueMainToFiguresExample), //descriptive
                           ("Choose an option", SIMenuCellType.DropDown, SISegueMainToOptionsChooser),
                           ("Other examples", .Default, SISegueMainToExamples)] //shorthand
 

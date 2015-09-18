@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
         <!--Options-->
@@ -95,10 +96,10 @@
             </objects>
             <point key="canvasLocation" x="984" y="-416"/>
         </scene>
-        <!--Figures-->
+        <!--Test-->
         <scene sceneID="q8F-AG-Sit">
             <objects>
-                <viewController id="yWA-ow-WRx" customClass="SIFiguresViewController" customModule="SwiftIntroduction" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="yWA-ow-WRx" customClass="SIInteractionViewController" customModule="SwiftIntroduction" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="XIN-uF-CSv"/>
                         <viewControllerLayoutGuide type="bottom" id="0Gm-lQ-CNz"/>
@@ -106,9 +107,38 @@
                     <view key="view" contentMode="scaleToFill" id="NK9-rs-RVI">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="wkX-tR-BaJ">
+                                <rect key="frame" x="20" y="84" width="280" height="231"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="wkX-tR-BaJ" secondAttribute="height" multiplier="40:33" id="TdC-DN-idN"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EK3-lb-vU4">
+                                <rect key="frame" x="20" y="335" width="280" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="xH6-pD-7Zh"/>
+                                </constraints>
+                                <state key="normal" title="Reload"/>
+                                <connections>
+                                    <action selector="reloadButtonTapped:" destination="yWA-ow-WRx" eventType="touchUpInside" id="lAh-tw-Id3"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="wkX-tR-BaJ" firstAttribute="top" secondItem="XIN-uF-CSv" secondAttribute="bottom" constant="20" id="02b-e3-3CC"/>
+                            <constraint firstItem="wkX-tR-BaJ" firstAttribute="leading" secondItem="NK9-rs-RVI" secondAttribute="leading" constant="20" id="N4m-1G-LZG"/>
+                            <constraint firstItem="EK3-lb-vU4" firstAttribute="leading" secondItem="NK9-rs-RVI" secondAttribute="leading" constant="20" id="Un3-va-sE8"/>
+                            <constraint firstItem="EK3-lb-vU4" firstAttribute="top" secondItem="wkX-tR-BaJ" secondAttribute="bottom" constant="20" id="hSM-qM-xOc"/>
+                            <constraint firstAttribute="trailing" secondItem="EK3-lb-vU4" secondAttribute="trailing" constant="20" id="jxN-3y-aRo"/>
+                            <constraint firstAttribute="trailing" secondItem="wkX-tR-BaJ" secondAttribute="trailing" constant="20" id="viY-6c-h4W"/>
+                        </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Figures" id="V25-ka-xRN"/>
+                    <navigationItem key="navigationItem" title="Test" id="V25-ka-xRN"/>
+                    <connections>
+                        <outlet property="imageView" destination="wkX-tR-BaJ" id="41h-kg-1N0"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ber-y1-HMc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
