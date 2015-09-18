@@ -22,8 +22,8 @@ class SIOptionChooserViewController: SIBaseViewController, UITableViewDataSource
 
         self.configureTableView()
         if self.selectedOption != nil {
-            let index = find(self.options, self.selectedOption!)
-            //self.options.indexOf(self.selectedOption!) //swift 2.0
+            let index = self.options.indexOf((self.selectedOption!)) //swift 2.0
+            //find(self.options, self.selectedOption!) //swift 1.2
             if (index != nil) {
                 let selectedIndexPath = NSIndexPath(forRow: index!, inSection: 0)
                 self.tableView.selectRowAtIndexPath(selectedIndexPath, animated: true, scrollPosition: UITableViewScrollPosition.Middle)
@@ -51,7 +51,7 @@ class SIOptionChooserViewController: SIBaseViewController, UITableViewDataSource
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier(UITableViewCell.si_defaultReuseIdentifier(), forIndexPath: indexPath) as! UITableViewCell
+        let cell = tableView.dequeueReusableCellWithIdentifier(UITableViewCell.si_defaultReuseIdentifier(), forIndexPath: indexPath) 
         cell.textLabel?.text = self.options[indexPath.row]
 
         return cell

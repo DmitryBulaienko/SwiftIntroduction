@@ -24,7 +24,7 @@ class SIMainScreenViewController: SIBaseViewController, UITableViewDelegate, UIT
     
     @IBOutlet weak var tableView: UITableView!
     
-    required init(coder aDecoder: NSCoder) {
+    required init?(coder aDecoder: NSCoder) {
         SITempConstValue = 2
         SIMainScreenViewController.overridebleTypeMethod()
         self.tableData = [(title: "Figures Example", type: SIMenuCellType.Default, segue: SISegueMainToFiguresExample), //descriptive
@@ -70,7 +70,7 @@ class SIMainScreenViewController: SIBaseViewController, UITableViewDelegate, UIT
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier(UITableViewCell.si_defaultReuseIdentifier(), forIndexPath: indexPath) as! UITableViewCell
+        let cell = tableView.dequeueReusableCellWithIdentifier(UITableViewCell.si_defaultReuseIdentifier(), forIndexPath: indexPath) 
         
         let cellData = self.tableData[indexPath.row]
         cell.textLabel?.text = cellData.title
@@ -100,8 +100,10 @@ class SIMainScreenViewController: SIBaseViewController, UITableViewDelegate, UIT
 
         self.selectedRowIndex = indexPath.row
         let cellData = self.tableData[indexPath.row]
-        self.performSegueWithIdentifier(cellData.segue, sender: nil)
-        println("selected at index \(self.selectedRowIndex) ")
+        if let segue = cellData.segue {
+            self.performSegueWithIdentifier(segue, sender: nil)
+        }
+        print("selected at index \(self.selectedRowIndex) ")
     }
     
 //MARK - Navigation

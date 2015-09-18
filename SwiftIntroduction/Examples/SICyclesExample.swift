@@ -18,7 +18,7 @@ class SICyclesExample: NSObject {
     }
     
     func print(arg: Int) {
-        println("value \(arg)")
+        Swift.print("value \(arg)")
     }
     
     func print(args :Int...) {
