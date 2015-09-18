@@ -17,6 +17,10 @@
 		4482C5CB1BA990250086CA87 /* SIBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4482C5CA1BA990250086CA87 /* SIBaseViewController.swift */; };
 		4482C5CF1BA9B3800086CA87 /* SIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4482C5CE1BA9B3800086CA87 /* SIConstants.swift */; };
 		4482C5D11BA9B4640086CA87 /* SITableViewCellExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4482C5D01BA9B4640086CA87 /* SITableViewCellExtensions.swift */; };
+		44B3C20C1BAC0E0C005B3266 /* SIPropertiesAndSubscriptsExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B3C20B1BAC0E0C005B3266 /* SIPropertiesAndSubscriptsExample.swift */; };
+		44B3C20E1BAC0F76005B3266 /* SIReferencesExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B3C20D1BAC0F76005B3266 /* SIReferencesExample.swift */; };
+		44B3C2101BAC0FA1005B3266 /* SIInitializersExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B3C20F1BAC0FA1005B3266 /* SIInitializersExample.swift */; };
+		44B3C2121BAC0FAD005B3266 /* SICyclesExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B3C2111BAC0FAD005B3266 /* SICyclesExample.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +36,10 @@
 		4482C5CA1BA990250086CA87 /* SIBaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SIBaseViewController.swift; sourceTree = "<group>"; };
 		4482C5CE1BA9B3800086CA87 /* SIConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SIConstants.swift; sourceTree = "<group>"; };
 		4482C5D01BA9B4640086CA87 /* SITableViewCellExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SITableViewCellExtensions.swift; sourceTree = "<group>"; };
+		44B3C20B1BAC0E0C005B3266 /* SIPropertiesAndSubscriptsExample.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SIPropertiesAndSubscriptsExample.swift; sourceTree = "<group>"; };
+		44B3C20D1BAC0F76005B3266 /* SIReferencesExample.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SIReferencesExample.swift; sourceTree = "<group>"; };
+		44B3C20F1BAC0FA1005B3266 /* SIInitializersExample.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SIInitializersExample.swift; sourceTree = "<group>"; };
+		44B3C2111BAC0FAD005B3266 /* SICyclesExample.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SICyclesExample.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +98,10 @@
 		4482C5C11BA986030086CA87 /* Examples */ = {
 			isa = PBXGroup;
 			children = (
+				44B3C20B1BAC0E0C005B3266 /* SIPropertiesAndSubscriptsExample.swift */,
+				44B3C20D1BAC0F76005B3266 /* SIReferencesExample.swift */,
+				44B3C20F1BAC0FA1005B3266 /* SIInitializersExample.swift */,
+				44B3C2111BAC0FAD005B3266 /* SICyclesExample.swift */,
 			);
 			path = Examples;
 			sourceTree = "<group>";
@@ -207,12 +219,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				4442A22C1BA9CF5F0086550A /* SIFiguresViewController.swift in Sources */,
+				44B3C2101BAC0FA1005B3266 /* SIInitializersExample.swift in Sources */,
 				4482C5D11BA9B4640086CA87 /* SITableViewCellExtensions.swift in Sources */,
 				4442A22E1BAAC2340086550A /* SIOptionChooserViewController.swift in Sources */,
+				44B3C20C1BAC0E0C005B3266 /* SIPropertiesAndSubscriptsExample.swift in Sources */,
 				4482C5CB1BA990250086CA87 /* SIBaseViewController.swift in Sources */,
 				4482C5CF1BA9B3800086CA87 /* SIConstants.swift in Sources */,
 				4482C5C91BA986910086CA87 /* SIMainScreenViewController.swift in Sources */,
 				4482C5A21BA9804F0086CA87 /* AppDelegate.swift in Sources */,
+				44B3C20E1BAC0F76005B3266 /* SIReferencesExample.swift in Sources */,
+				44B3C2121BAC0FAD005B3266 /* SICyclesExample.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
