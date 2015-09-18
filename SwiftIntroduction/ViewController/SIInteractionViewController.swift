@@ -24,11 +24,11 @@ class SIInteractionViewController: SIBaseViewController {
     
     private func loadImage() {
         let imageURL = NSURL(string: self.tempImageURLPath)
-        self.imageView.pin_setImageFromURL(imageURL, placeholderImage: nil) {[weak self] (result: PINRemoteImageManagerResult!) -> Void in
-            if let weakSelf = self {
-                weakSelf.imageView.alpha = 0.0
+        self.imageView.pin_setImageFromURL(imageURL, placeholderImage: nil) {[weak imageView = self.imageView] (result: PINRemoteImageManagerResult!) -> Void in
+            if let weakImageView = imageView {
+                weakImageView.alpha = 0.0
                 UIView.animateWithDuration(SIFadeAnimationDuration, animations: { () -> Void in
-                    weakSelf.imageView.alpha = 1.0
+                    weakImageView.alpha = 1.0
                 })
             }
         }

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4417ECBD1BAC6A83000E9D43 /* SIObjCExample.m in Sources */ = {isa = PBXBuildFile; fileRef = 4417ECBC1BAC6A83000E9D43 /* SIObjCExample.m */; settings = {ASSET_TAGS = (); }; };
 		4442A22C1BA9CF5F0086550A /* SIInteractionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4442A22B1BA9CF5F0086550A /* SIInteractionViewController.swift */; };
 		4442A22E1BAAC2340086550A /* SIOptionChooserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4442A22D1BAAC2340086550A /* SIOptionChooserViewController.swift */; };
 		4482C5A21BA9804F0086CA87 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4482C5A11BA9804F0086CA87 /* AppDelegate.swift */; };
@@ -27,6 +28,8 @@
 
 /* Begin PBXFileReference section */
 		4417ECB91BAC5D25000E9D43 /* SwiftIntroduction-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SwiftIntroduction-Bridging-Header.h"; sourceTree = "<group>"; };
+		4417ECBB1BAC6A83000E9D43 /* SIObjCExample.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SIObjCExample.h; sourceTree = "<group>"; };
+		4417ECBC1BAC6A83000E9D43 /* SIObjCExample.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SIObjCExample.m; sourceTree = "<group>"; };
 		4442A22B1BA9CF5F0086550A /* SIInteractionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SIInteractionViewController.swift; sourceTree = "<group>"; };
 		4442A22D1BAAC2340086550A /* SIOptionChooserViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SIOptionChooserViewController.swift; sourceTree = "<group>"; };
 		4482C59C1BA9804F0086CA87 /* SwiftIntroduction.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftIntroduction.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -86,6 +89,15 @@
 			path = BridgingHeaders;
 			sourceTree = "<group>";
 		};
+		4417ECBA1BAC6A63000E9D43 /* obj-c */ = {
+			isa = PBXGroup;
+			children = (
+				4417ECBB1BAC6A83000E9D43 /* SIObjCExample.h */,
+				4417ECBC1BAC6A83000E9D43 /* SIObjCExample.m */,
+			);
+			path = "obj-c";
+			sourceTree = "<group>";
+		};
 		4482C5931BA9804E0086CA87 = {
 			isa = PBXGroup;
 			children = (
@@ -113,6 +125,7 @@
 				4482C5C31BA986030086CA87 /* View */,
 				4482C5C41BA986030086CA87 /* ViewController */,
 				4482C5CC1BA9B25E0086CA87 /* Extension */,
+				4417ECBA1BAC6A63000E9D43 /* obj-c */,
 				4482C5A11BA9804F0086CA87 /* AppDelegate.swift */,
 				4482C5A51BA9804F0086CA87 /* Main.storyboard */,
 				4482C5A81BA9804F0086CA87 /* Images.xcassets */,
@@ -313,6 +326,7 @@
 				4482C5D11BA9B4640086CA87 /* SITableViewCellExtensions.swift in Sources */,
 				4442A22E1BAAC2340086550A /* SIOptionChooserViewController.swift in Sources */,
 				44B3C20C1BAC0E0C005B3266 /* SIPropertiesAndSubscriptsExample.swift in Sources */,
+				4417ECBD1BAC6A83000E9D43 /* SIObjCExample.m in Sources */,
 				4482C5CB1BA990250086CA87 /* SIBaseViewController.swift in Sources */,
 				4482C5CF1BA9B3800086CA87 /* SIConstants.swift in Sources */,
 				44AB4B3A1BAC2B3300411351 /* SIOtherExamplesController.swift in Sources */,

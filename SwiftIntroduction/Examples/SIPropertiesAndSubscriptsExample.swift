@@ -10,7 +10,7 @@ import UIKit
 
 // MARK: - Subscripts
 
-class SIHero {
+class SIHero : NSObject {
     let name: String
     var power: Float?
     
@@ -20,7 +20,7 @@ class SIHero {
     }
 }
 
-class SIAvangers {
+class SIAvangers : NSObject {
     var heroes: [SIHero]?
     
     init(heroes: [SIHero]?) {
@@ -48,7 +48,7 @@ class SIAvangers {
 
 // MARK: - Properties
 
-class SISomeMassiveClass {
+class SISomeMassiveClass : NSObject {
     //
 }
 

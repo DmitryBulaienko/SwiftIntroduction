@@ -1,12 +1,15 @@
 //
-//  SwiftIntroduction-Bridging-Header.h
+//  SIObjCExample.h
 //  SwiftIntroduction
 //
 //  Created by iOS Developer on 9/18/15.
 //  Copyright © 2015 Applikey Solutions. All rights reserved.
 //
 
-#import <UIImageView+PINRemoteImage.h>
-#import <PINCache.h>
+#import <Foundation/Foundation.h>
 
-#import "SIObjCExample.h"
+@interface SIObjCExample : NSObject
+
++ (id)testSwiftCall;
+
+@end

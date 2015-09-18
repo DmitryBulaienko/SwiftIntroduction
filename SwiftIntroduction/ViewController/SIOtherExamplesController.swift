@@ -15,9 +15,12 @@ class SIOtherExamplesController: SIBaseViewController {
 
         let propertiesDemo = SIPropertiesAndSubscriptsExample()
         let hero1 = propertiesDemo.heroAtIndex(0)
-        let hero2 = propertiesDemo.heroAtIndex(3)
+        let hero2 = propertiesDemo.heroAtIndex(2)
+        let hero3 = SIObjCExample.testSwiftCall() as? SIHero
+        
         print(hero1?.name)
         print(hero2?.name)
+        print("from obj-c - \(hero3?.name)")
         
         propertiesDemo.alwaysPositiveProperty = -5
         
