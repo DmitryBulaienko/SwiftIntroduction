@@ -21,8 +21,8 @@
 		44AB4B3A1BAC2B3300411351 /* SIOtherExamplesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44AB4B391BAC2B3300411351 /* SIOtherExamplesController.swift */; settings = {ASSET_TAGS = (); }; };
 		44B3C20C1BAC0E0C005B3266 /* SIPropertiesAndSubscriptsExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B3C20B1BAC0E0C005B3266 /* SIPropertiesAndSubscriptsExample.swift */; };
 		44B3C20E1BAC0F76005B3266 /* SIReferencesExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B3C20D1BAC0F76005B3266 /* SIReferencesExample.swift */; };
-		44B3C2101BAC0FA1005B3266 /* SIInitializersExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B3C20F1BAC0FA1005B3266 /* SIInitializersExample.swift */; };
 		44B3C2121BAC0FAD005B3266 /* SICyclesExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B3C2111BAC0FAD005B3266 /* SICyclesExample.swift */; };
+		44CC13481BB0066700B00FEC /* SIGenericsExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44CC13471BB0066700B00FEC /* SIGenericsExample.swift */; settings = {ASSET_TAGS = (); }; };
 		6117AC88545ED836F039E462 /* libPods-SwiftIntroduction.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 61C918EFA78580A77C508C20 /* libPods-SwiftIntroduction.a */; };
 /* End PBXBuildFile section */
 
@@ -45,8 +45,8 @@
 		44AB4B391BAC2B3300411351 /* SIOtherExamplesController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SIOtherExamplesController.swift; sourceTree = "<group>"; };
 		44B3C20B1BAC0E0C005B3266 /* SIPropertiesAndSubscriptsExample.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SIPropertiesAndSubscriptsExample.swift; sourceTree = "<group>"; };
 		44B3C20D1BAC0F76005B3266 /* SIReferencesExample.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SIReferencesExample.swift; sourceTree = "<group>"; };
-		44B3C20F1BAC0FA1005B3266 /* SIInitializersExample.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SIInitializersExample.swift; sourceTree = "<group>"; };
 		44B3C2111BAC0FAD005B3266 /* SICyclesExample.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SICyclesExample.swift; sourceTree = "<group>"; };
+		44CC13471BB0066700B00FEC /* SIGenericsExample.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SIGenericsExample.swift; sourceTree = "<group>"; };
 		5F6C8FF083812F7C9B1DDFE9 /* Pods-SwiftIntroduction.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftIntroduction.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftIntroduction/Pods-SwiftIntroduction.debug.xcconfig"; sourceTree = "<group>"; };
 		61C918EFA78580A77C508C20 /* libPods-SwiftIntroduction.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SwiftIntroduction.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7966573B83FF8FB17CB828D /* Pods-SwiftIntroduction.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftIntroduction.release.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftIntroduction/Pods-SwiftIntroduction.release.xcconfig"; sourceTree = "<group>"; };
@@ -149,8 +149,8 @@
 			children = (
 				44B3C20B1BAC0E0C005B3266 /* SIPropertiesAndSubscriptsExample.swift */,
 				44B3C20D1BAC0F76005B3266 /* SIReferencesExample.swift */,
-				44B3C20F1BAC0FA1005B3266 /* SIInitializersExample.swift */,
 				44B3C2111BAC0FAD005B3266 /* SICyclesExample.swift */,
+				44CC13471BB0066700B00FEC /* SIGenericsExample.swift */,
 			);
 			path = Examples;
 			sourceTree = "<group>";
@@ -322,11 +322,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				4442A22C1BA9CF5F0086550A /* SIInteractionViewController.swift in Sources */,
-				44B3C2101BAC0FA1005B3266 /* SIInitializersExample.swift in Sources */,
 				4482C5D11BA9B4640086CA87 /* SITableViewCellExtensions.swift in Sources */,
 				4442A22E1BAAC2340086550A /* SIOptionChooserViewController.swift in Sources */,
 				44B3C20C1BAC0E0C005B3266 /* SIPropertiesAndSubscriptsExample.swift in Sources */,
 				4417ECBD1BAC6A83000E9D43 /* SIObjCExample.m in Sources */,
+				44CC13481BB0066700B00FEC /* SIGenericsExample.swift in Sources */,
 				4482C5CB1BA990250086CA87 /* SIBaseViewController.swift in Sources */,
 				4482C5CF1BA9B3800086CA87 /* SIConstants.swift in Sources */,
 				44AB4B3A1BAC2B3300411351 /* SIOtherExamplesController.swift in Sources */,

@@ -15,6 +15,10 @@ class Customer {
     init(name: String) {
         self.name = name
     }
+    
+    deinit{
+        
+    }
 }
 
 class CreditCard {

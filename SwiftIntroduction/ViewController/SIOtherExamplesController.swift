@@ -8,6 +8,14 @@
 
 import UIKit
 
+class SomeSingleton {
+    static let sharedInstance = SomeSingleton()
+    
+    func someFunc() {
+        print("executing some func")
+    }
+}
+
 class SIOtherExamplesController: SIBaseViewController {
 
     override func viewDidLoad() {
@@ -22,8 +30,18 @@ class SIOtherExamplesController: SIBaseViewController {
         print(hero2?.name)
         print("from obj-c - \(hero3?.name)")
         
+        //
+        
         propertiesDemo.alwaysPositiveProperty = -5
         
+        //
+        
+        let refsExample = SIReferencesExample()
+        refsExample.createTempCard()
+        
+        //
+        
+        SomeSingleton.sharedInstance.someFunc()
     }
 
 }
