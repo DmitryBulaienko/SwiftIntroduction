@@ -33,10 +33,17 @@ class CreditCard {
 
 class SIReferencesExample: NSObject {
     var john: Customer?
+    var tempCard: CreditCard?
     
     func createTempCard() {
-        self.john = Customer(name: "John Appleseed")
+        self.john = Customer(name: "Vasya Pupkin")
         self.john!.card = CreditCard(number: 1234_5678_9012_3456, customer: self.john!)
+    }
+    
+    func createTempCardIncorrectWay() {
+        var customer:Customer? = Customer(name: "Vasya Pupkin")
+        self.tempCard = CreditCard(number: 1234_5678_9012_3456, customer: customer!)
+        customer = nil;
     }
    
 }

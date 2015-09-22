@@ -38,7 +38,8 @@ class SIOtherExamplesController: SIBaseViewController {
         
         let refsExample = SIReferencesExample()
         refsExample.createTempCard()
-        
+        refsExample.createTempCardIncorrectWay()
+        //let releasedCustomer = refsExample.tempCard?.customer
         //
         
         SomeSingleton.sharedInstance.someFunc()

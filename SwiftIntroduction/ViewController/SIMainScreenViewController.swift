@@ -41,6 +41,7 @@ class SIMainScreenViewController: SIBaseViewController, UITableViewDelegate, UIT
     required init?(coder aDecoder: NSCoder) {
         SITempConstValue = 2
         SIMainScreenViewController.overridebleTypeMethod()
+
         self.tableData = [(title: "Load image test", type: SIMenuCellType.Default, segue: SISegueMainToFiguresExample), //descriptive
                           ("Choose an option", SIMenuCellType.DropDown, SISegueMainToOptionsChooser),
                           ("Other examples", .Default, SISegueMainToExamples)] //shorthand
@@ -128,10 +129,11 @@ class SIMainScreenViewController: SIBaseViewController, UITableViewDelegate, UIT
         switch segue.identifier! {
         case SISegueMainToOptionsChooser:
             let optionsVC = segue.destinationViewController as! SIOptionChooserViewController
+            
             if self.selectedRowIndex != nil {
                 optionsVC.selectedOption = self.tableData[self.selectedRowIndex!].title
             }
-            
+
             optionsVC.optionSelectedCallback = {[weak self] (option: String) in
                 if let strongSelf = self {
                     if strongSelf.selectedRowIndex != nil {
